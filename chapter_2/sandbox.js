@@ -1,20 +1,26 @@
-// Declaração de variável apenas na primeira vez
-let age = 12;
-let year = 2021;
+// strings
+console.log('hello, world');
 
-console.log(age, year);
+let email = 'mario@ninja.nintendo';
+console.log(email);
 
-age = 30;
-console.log(age);
+//string concatenation
+let primeiroNome = 'Brandom';
+let sobrenome = 'Sanderson';
 
-const points = 100;
-// points = 50;
-console.log(points);
+let nomeCompleto = primeiroNome + ' ' + sobrenome;
+console.log(nomeCompleto);
 
-//velho modo de declarar variáveis em JavaScript
-var score = 75;
-console.log(score);
+// getting characters
+console.log(nomeCompleto[2]);
 
-/*variáveis não podem começar com números
- palavras reservadas: https://www.w3schools.com/js/js_reserved.asp
- */
+// string length
+console.log(nomeCompleto.length);
+
+// string methods
+console.log(nomeCompleto.toUpperCase());
+let result = nomeCompleto.toLowerCase();
+console.log(result, nomeCompleto)
+
+let index = email.indexOf('@')
+console.log(index);
