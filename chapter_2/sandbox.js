@@ -1,26 +1,13 @@
-// strings
-console.log('hello, world');
+// common string methods
 
-let email = 'mario@ninja.nintendo';
-console.log(email);
+let email = 'mario@ninja.bros';
 
-//string concatenation
-let primeiroNome = 'Brandom';
-let sobrenome = 'Sanderson';
+// let result = email.lastIndexOf('n');
+// let result = email.slice(0, 5);
+// let result = email.substr(2, 10);
+// let result = email.replace('m', 'w');
+let result = email.replace('a', 'u');
 
-let nomeCompleto = primeiroNome + ' ' + sobrenome;
-console.log(nomeCompleto);
 
-// getting characters
-console.log(nomeCompleto[2]);
+console.log(result);
 
-// string length
-console.log(nomeCompleto.length);
-
-// string methods
-console.log(nomeCompleto.toUpperCase());
-let result = nomeCompleto.toLowerCase();
-console.log(result, nomeCompleto)
-
-let index = email.indexOf('@')
-console.log(index);
