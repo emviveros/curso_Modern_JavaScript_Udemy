@@ -1,38 +1,20 @@
-// switch statements
-const grade = 'p';
+// variables & block
+let age = 30;
 
-switch(grade){
-    case 'A':
-        console.log('You got an A!');
-        break;
-    case 'B':
-        console.log('You got an B!');
-        break;
-    case 'C':
-        console.log('You got an C!');
-        break;
-    case 'D':
-        console.log('You got an D!');
-        break;
-    case 'E':
-        console.log('You got an E!');
-        break;
-    default:
-        console.log('not valid grade')
+// let age = 50;
+
+if(true){
+    let age = 40;
+    // age = 40;
+    let name = 'shaun'
+    console.log('inside 1st code block: ', age, name);
+
+    if(true){
+        let age = 55;
+        console.log('inside 2nd code block: ', age, name);
+    }
 }
 
+console.log('outside code block: ', age, name);
 
-// //using statements
-// if(grade ==== 'A'){
-
-// } else if(grade === 'B'){
-
-// } else if(grade === 'C'){
-
-// } else if(grade === 'D'){
-    
-// } else if(grade === 'E'){
-    
-// } else{
-    
-// }
+// o mesmo vale para const
