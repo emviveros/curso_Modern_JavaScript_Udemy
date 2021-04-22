@@ -8,4 +8,4 @@ const calcArea = function(radius){
 
 
 const area = calcArea(5);
-console.log('area is: ',area);
+console.log('area is: ', area);
