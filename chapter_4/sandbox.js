@@ -6,7 +6,7 @@ const myFunc = (callbackFunc) => {
     callbackFunc(value);
 };
 
-myFunc(function(value){
+myFunc(value => {
     // do something
     console.log(value);
 });
