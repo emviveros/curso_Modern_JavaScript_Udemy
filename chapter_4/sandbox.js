@@ -13,12 +13,6 @@ let user = {
         console.log('the user logged out');
     },
     logBlogs: function(){
-        
+
     }
 };
-
-user.login();
-user.logout();
-
-const name = 'mario';
-name.toUpperCase();
