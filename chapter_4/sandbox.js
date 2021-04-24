@@ -1,14 +1,44 @@
 // callbacks & foreach
 
-const myFunc = (callbackFunc) => {
-    // do something
-    let value = 50;
-    callbackFunc(value);
-};
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-myFunc(value => {
-    // do something
-    console.log(value);
+people.forEach(function(){
+    console.log('something');
 });
 
-// let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+///////////////////////////////////////////////////////////
+console.log("---");
+
+people.forEach(function(person){
+    console.log(person);
+});
+
+///////////////////////////////////////////////////////////
+console.log("---");
+
+people.forEach(person => {
+    console.log(person);
+});
+
+///////////////////////////////////////////////////////////
+console.log("---");
+
+people.forEach((person, index) => {
+    console.log(index, person);
+});
+
+///////////////////////////////////////////////////////////
+console.log("---");
+
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`);
+};
+
+people.forEach(logPerson);
+
+///////////////////////////////////////////////////////////
+
+// Funções de callback são funções normais, que são passadas
+// a outras funções como argumento
+
+///////////////////////////////////////////////////////////
