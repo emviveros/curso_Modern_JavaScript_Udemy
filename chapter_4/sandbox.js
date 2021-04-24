@@ -12,7 +12,24 @@ let user = {
     logout: function(){
         console.log('the user logged out');
     },
-    logBlogs: function(){
-
+    //outra forma de escrever regular functions:
+    logBlogs(){
+        console.log(this);
+        // console.log(this.blogs);
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
+    },
+    logThis: () => {
+        console.log(this);
     }
 };
+
+user.logBlogs();
+console.log(this);
+
+// quando usamos arrow function em JavaScript, o parâmetro this
+// funciona de forma diferente quando usamos regular fuctions...
+// repare que em regular functions aponta para o objeto e em 
+// arrow functions aponta para o documento principal.
+user.logThis();
