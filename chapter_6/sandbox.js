@@ -14,4 +14,9 @@ paragrafos.forEach( p => {
     }
 });
 
+const title = document.querySelector('.title');
 
+title.classList.toggle('test');
+title.classList.toggle('test');
+
+// 3 métodos para adicionar são add, remove e toogle
