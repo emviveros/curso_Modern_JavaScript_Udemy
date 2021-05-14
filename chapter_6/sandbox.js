@@ -3,7 +3,11 @@ const ul = document.querySelector('ul');
 
 const button = document.querySelector('button');
 button.addEventListener('click', () => {
-    ul.innerHTML += '<li>something new</li>'
+    // ul.innerHTML += '<li>something new</li>'
+    const li = document.createElement('li');
+    li.textContent = 'something new to do';
+    // ul.append(li);
+    ul.prepend(li);
 });
 
 const items = document.querySelectorAll('li');
@@ -17,3 +21,5 @@ items.forEach(item => {
     });
 });
 
+// Não dá pra apagar os itens adicionados pelo botão add new ToDo
+// no próximo video será como fazer isso
