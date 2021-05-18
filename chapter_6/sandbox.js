@@ -11,6 +11,12 @@ const items = document.querySelectorAll('li');
 
 items.forEach(item => {
     item.addEventListener('click', e => {
+        console.log('event in LI');
+        e.stopPropagation(); // interrompe bubbling event
         e.target.remove();
     });
+});
+
+ul.addEventListener('click', e => {
+    console.log('event in UL');
 });
